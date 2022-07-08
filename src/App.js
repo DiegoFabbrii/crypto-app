@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import Header from "./components/Header/Header";
+import MenuMobProvider from "./context/MenuMobContext";
+import ThemeProvider from "./context/ThemeContext";
+import Home from "./pages/Home";
+import SingIn from "./pages/SingIn";
+import SingUp from "./pages/SingUp";
+import Account from "./pages/Account";
+import CoinPage from "./pages/CoinPage";
+import SearchAndPagProvider from "./context/SearchAndPaginationContext";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <ThemeProvider>
+            <MenuMobProvider>
+                <SearchAndPagProvider>
+                    <Header />
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/sigin" element={<SingIn />} />
+                        <Route path="/" element={<SingUp />} />
+                        <Route path="/" element={<Account />} />
+                        <Route path="/coin/:id" element={<CoinPage />} />
+                    </Routes>
+                </SearchAndPagProvider>
+            </MenuMobProvider>
+        </ThemeProvider>
+    );
 }
 
 export default App;
