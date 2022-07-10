@@ -25,10 +25,6 @@ function MenuMobile() {
                     </li>
 
                     <li className="border-b py-6">
-                        <Link to="/">Account</Link>
-                    </li>
-
-                    <li className="border-b py-6">
                         <ToggleTheme />
                     </li>
                 </ul>

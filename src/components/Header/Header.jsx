@@ -11,7 +11,7 @@ function Header() {
         <header className="flex justify-center h-20">
             <nav className="flex justify-between items-center w-[85%] max-w-6xl font-bold">
                 <Link to="/">
-                    <h1 className="text-2xl">CryptoBase</h1>
+                    <h1 className="text-2xl">CryptoApp</h1>
                 </Link>
                 <div className="hidden lg:block">
                     <ToggleTheme />
