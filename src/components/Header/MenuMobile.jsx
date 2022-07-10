@@ -1,7 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { MenuMobContext } from "../../context/MenuMobContext";
-import Buttons from "./Buttons";
 import ToggleTheme from "./ToggleTheme";
 
 function MenuMobile() {
@@ -33,8 +32,6 @@ function MenuMobile() {
                         <ToggleTheme />
                     </li>
                 </ul>
-
-                <Buttons />
             </nav>
         </div>
     );
