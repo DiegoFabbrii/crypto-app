@@ -10,6 +10,7 @@ const ThemeProvider = ({ children }) => {
     useEffect(() => {
         !localStorage.colorTheme &&
             localStorage.setItem("colorTheme", JSON.stringify(theme));
+
         const initialTheme = JSON.parse(localStorage.getItem("colorTheme"));
         setTheme(initialTheme);
     }, []);
