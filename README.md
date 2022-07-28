@@ -68,3 +68,22 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+# Projeto Crypto app
+
+> ## Sobre o projeto 
+
+Nesse projeto listo varias criptomoedas onde cada uma tem a sua página com alguns detalhes sobre valor de mercado e gráfico de preço.
+
+> ## Tecnologias usadas
+
+React.js, Tailwind, Chart.js
+
+> ## funcionalidades do projeto
+
+Input de pesquisa, Paginação, Gráficos
+
+[Link o projeto](https://helpful-lily-b54ef3.netlify.app/)
+
